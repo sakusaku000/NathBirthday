@@ -1,0 +1,28 @@
+body {
+    margin:0px;
+    background-color:black !important;
+    background-image:url(image/bspace.gif);
+    background-repeat:repeat;
+    color:white !important;
+}
+
+.inner {
+    margin:10px;
+    border:ridge yellow 10px;
+}
+
+.centeralign {
+    text-align:center;
+}
+.deadcenter {
+    display:flex; justify-content:center; align-items:center;
+    height:100vh; overflow:hidden;
+}
+
+.rowcontent {
+    display:flex; justify-content:center; align-items:center;
+}
+
+.rowcontentcake {
+    width:10px;
+}
