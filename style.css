@@ -1,14 +1,14 @@
 body {
     margin:0px;
     background-color:black !important;
-    background-image:url(image/bspace.gif);
-    background-repeat:repeat;
     color:white !important;
 }
 
 .inner {
     margin:10px;
     border:ridge yellow 10px;
+    background-image:url(image/bspace.gif);
+    background-repeat:repeat;
 }
 
 .centeralign {
