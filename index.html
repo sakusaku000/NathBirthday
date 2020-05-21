@@ -55,8 +55,8 @@
                 </div>
                 <hr>
                 <img src="image/happybirthdaycake.gif" style="margin:50px;">
-                <img src="image/happybirthdaycake.gif" style="margin:50px;">
-                <img src="image/happybirthdaycake.gif" style="margin:50px;">
+                <img src="image/happybirthdaycake.gif" style="margin:50px;" onclick="incCake(1)">
+                <img src="image/happybirthdaycake.gif" style="margin:50px;" onclick="incCake(2)">
                 <img src="image/happybirthdaycake.gif" style="margin:50px;">
                 <hr>
                 <img src="image/towergame4.png" style="width:150px; height:150px; image-rendering:pixelated;">
@@ -70,6 +70,7 @@
             </div>
         </div>
         <audio src="music/party_rock_anthem.mp3" id="partyrock"></audio>
+        <audio src="music/senbonzakura.mp3" id="mikuSONG"></audio>
 
         <!-- script -->
         <script>
@@ -78,6 +79,18 @@
                 document.getElementById("main").style = "display:block;"
                 document.getElementById("partyrock").play();
             };
+            var cake1hits = 0;
+            var cake2hits = 0;
+            function incCake(cake) {
+                if (cake === 1 && cake1hits < 3) cake1hits += 1; 
+                if (cake === 2 && cake2hits < 9) cake2hits += 1;
+                console.log(`${cake1hits} ${cake2hits}`);
+                if (cake1hits === 3 && cake2hits === 9) {
+                    document.getElementById("partyrock").pause();
+                    document.getElementById("mikuSONG").play();
+                    document.getElementById("main").style = "background-image:url(image/michael.png);"
+                };
+            }
         </script>
     </body>
 </html>
