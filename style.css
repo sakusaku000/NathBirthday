@@ -6,6 +6,10 @@ body {
     background-repeat:repeat;
 }
 
+#main {
+    image-rendering:pixelated;
+}
+
 .inner {
     margin:10px;
     border:ridge yellow 10px;
